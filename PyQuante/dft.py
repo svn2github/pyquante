@@ -298,8 +298,8 @@ def udft(atoms,**kwargs):
 
         Exc,XCa,XCb = getXC(gr,nel,**kwargs)
             
-        Fa = h+Ja+Jb-Ka
-        Fb = h+Ja+Jb-Kb
+        Fa = h+Ja+Jb-Ka  # Should this be XCa instead of Ka?
+        Fb = h+Ja+Jb-Kb  # Should this be XCa instead of Kb?
         
         orbea,orbsa = geigh(Fa,S)
         orbeb,orbsb = geigh(Fb,S)
